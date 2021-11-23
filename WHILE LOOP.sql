@@ -1,0 +1,16 @@
+--WHILE LOOP
+
+DECLARE
+ A NUMBER(2) :=50;
+ I NUMBER(2):=0;
+
+BEGIN
+  WHILE A>0 LOOP
+    I := I+1;
+    DBMS_OUTPUT.PUT_LINE(I||'.SAYI ='||A);
+    A:= A-5; 
+  END LOOP;
+
+
+END;
+
