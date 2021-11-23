@@ -1,0 +1,23 @@
+--YARIÇAPI VERÝLEN ÇEMBERÝN ALAN VE ÇEVRERSÝNÝ HESAPLMA
+
+DECLARE
+  PI CONSTANT DOUBLE PRECISION :=3.1415;
+  R NUMBER(5,2);
+  ALAN NUMBER(10,2);
+  CEVRE NUMBER(10,2);
+  
+  ACIKLAMA1 VARCHAR2(15):='ALAN =';
+  ACIKLAMA2 VARCHAR2(15) := 'CEVRE =';
+  
+BEGIN
+    R:=5;
+   -- R:= &YARICAP_GIR; YARIÇAPI KULLANICIDAN ALIR
+    ALAN := PI*R*R;
+    CEVRE := 2*PI*R;
+    
+    dbms_output.put_lýne(ACIKLAMA1||''||ALAN);
+    dbms_output.put_lýne(ACIKLAMA2||''||CEVRE);
+    
+    
+
+END;
